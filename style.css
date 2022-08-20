@@ -128,16 +128,12 @@ section.phone-number .inner-column {
     background-color: var(--secondary);
     display: flex;
     justify-content: center;
-    padding: 28px;
     align-items: center;
+    padding: 18px;
 }
 
 section.phone-number a {
-    /* border: 2px solid black; */
-    text-align: center;
-    line-height: 1;
     font-size: 34px;
     font-weight: bold;
     color: var(--primary-blk);
-    padding-top: 1px;
 }

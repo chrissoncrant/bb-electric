@@ -1,0 +1,143 @@
+:root {
+    --primary-blk: #2B303A;
+    --primary-gray: #B0B0B0;
+    --primary-white: #EEE5E9;   
+    --secondary: #92DCE5;
+    --accent: #D64933;
+}
+
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    min-height: 100vh;
+    font-family: Helvetica, sans-serif;
+    /* border: solid 2px red; */
+    background-color: var(--primary-white);
+}
+
+picture img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Trying something new above */
+/* img, picture, video, canvas, svg {
+    max-width: 100%;
+    height: auto;
+    display: block;
+} */
+
+input, button {
+    font: inherit;
+}
+
+ol, ul {
+    list-style: none;
+    padding: 0;
+}
+
+h1, 
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    overflow-wrap: break-word;
+    max-width: 65ch;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+}
+
+p a {
+    display: inline;
+    text-decoration: underline;
+}
+
+.inner-column {
+    padding: 0px 15px;
+    max-width: 700px;
+    min-width: 350px;
+    margin: auto;
+}
+
+header .inner-column {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    background-color: var(--primary-blk);
+    padding: 15px;
+}
+
+    h1 {
+        line-height: 0.6;
+    }
+
+    h1 img {
+        width: 125px;
+    }
+
+    header nav a {
+        color: var(--secondary);
+        font-size: 22px;
+        line-height: 1;
+    }
+
+
+section.hero {
+    text-align: center;
+    padding: 40px 0;
+    color: var(--primary-blk);
+}
+
+section.home h2 {
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 34px;
+}
+
+section.home p {
+    color: var(--accent);
+}
+
+section.hours {
+    text-align: left;
+    color: var(--primary-white);
+}
+
+section.hours .inner-column {
+    padding: 40px 15px;
+    background-color: var(--primary-blk);
+}
+
+section.phone-number .inner-column {
+    background-color: var(--secondary);
+    display: flex;
+    justify-content: center;
+    padding: 28px;
+    align-items: center;
+}
+
+section.phone-number a {
+    /* border: 2px solid black; */
+    text-align: center;
+    line-height: 1;
+    font-size: 34px;
+    font-weight: bold;
+    color: var(--primary-blk);
+    padding-top: 1px;
+}

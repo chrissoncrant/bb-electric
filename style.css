@@ -1,11 +1,3 @@
-:root {
-    --primary-blk: #2B303A;
-    --primary-gray: #B0B0B0;
-    --primary-white: #EEE5E9;   
-    --secondary: #92DCE5;
-    --accent: #D64933;
-}
-
 *,
 *::before,
 *::after {
@@ -15,28 +7,30 @@
     padding: 0;
 }
 
+html {
+    --primary-blk: #2B303A;
+    --primary-gray: #B0B0B0;
+    --primary-white: #EEE5E9;   
+    --secondary: #92DCE5;
+    --accent: #D64933;
+
+    scroll-behavior: smooth;
+}
+
 body {
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     min-height: 100vh;
     font-family: Helvetica, sans-serif;
     /* border: solid 2px red; */
     background-color: var(--primary-white);
 }
 
-picture img {
+img {
     display: block;
     max-width: 100%;
     height: auto;
 }
-
-/* Trying something new above */
-/* img, picture, video, canvas, svg {
-    max-width: 100%;
-    height: auto;
-    display: block;
-} */
 
 input, button {
     font: inherit;
@@ -45,17 +39,6 @@ input, button {
 ol, ul {
     list-style: none;
     padding: 0;
-}
-
-h1, 
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-    overflow-wrap: break-word;
-    max-width: 65ch;
 }
 
 a {
@@ -83,20 +66,25 @@ header .inner-column {
     padding: 15px;
 }
 
-    h1 {
-        line-height: 0.6;
-    }
+h1 {
+    line-height: 0.6;
+}
 
-    h1 img {
-        width: 125px;
-    }
+h1 img {
+    width: 125px;
+}
 
-    header nav a {
-        color: var(--secondary);
-        font-size: 22px;
-        line-height: 1;
-    }
+h2 {
+    font-size: 34px;
+}
 
+header nav a {
+    color: var(--secondary);
+    font-size: 22px;
+    line-height: 1;
+}
+
+/* HOME SECTION ######################## */
 
 section.hero {
     text-align: center;
@@ -107,7 +95,6 @@ section.hero {
 section.home h2 {
     font-weight: normal;
     text-transform: uppercase;
-    font-size: 34px;
 }
 
 section.home p {
@@ -130,10 +117,99 @@ section.phone-number .inner-column {
     justify-content: center;
     align-items: center;
     padding: 18px;
+    position: relative;
 }
 
-section.phone-number a {
+section.phone-number .inner-column img {
+    width: 28px;
+    position: absolute;
+    top: -14px;
+}
+
+section.phone-number .inner-column a {
     font-size: 34px;
     font-weight: bold;
     color: var(--primary-blk);
 }
+
+/* CONTACT SECTION ######################## */
+
+section.contact {
+    text-align: center;
+}
+
+section.contact h2 {
+    color: var(--secondary);
+    background-color: var(--primary-blk);
+    text-align: center;
+    padding: 40px 0px;
+    max-width: 700px;
+    min-width: 350px;
+    margin: auto;
+}
+
+.phone-email .inner-column {
+    background-color: var(--primary-gray);
+    color: var(--primary-blk);
+    padding: 27.5px 15px 20px;
+    line-height: 1.2;
+    font-size: 20px;
+}
+
+.phone-email h3 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.phone-email li:first-child {
+    margin-bottom: 20px;
+}
+
+.phone-email a {
+    color: var(--primary-white);
+    background-color: var(--accent);
+    width: fit-content;
+    margin: auto;
+    margin-top: 10px;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+section.contact .hours .inner-column {
+    text-align: center;
+    color: var(--primary-blk);
+    background-color: var(--primary-gray);
+    font-size: 20px;
+    padding: 0px 15px 27.5px;
+}
+
+section.contact .response-guarantee .inner-column {
+    background-color: var(--primary-blk);
+    padding: 30px 15px;
+    position: relative;
+}
+
+section.contact .response-guarantee img {
+    width: 28px;
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    transform: translateX(-50%)
+} 
+
+section.contact .response-guarantee h3 {
+    padding: 0px 15px 10px;
+    color: var(--accent);
+    font-size: 26px;
+}
+
+section.contact .response-guarantee p {
+    color: var(--secondary);
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: bold;
+}
+
+
+

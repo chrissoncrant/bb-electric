@@ -61,7 +61,7 @@ header {
     background-color: blue;
 }
 
-main section.section-body {
+main section.page-section {
     height: calc(100vh - var(--header-height) * 2);
     min-height: calc(650px - var(--min-header-height)*2);
     background-color: green;
@@ -92,4 +92,9 @@ main section.contact-info {
     flex-direction: column;
     justify-content: space-evenly;
     padding: 10% 15px;
+}
+
+.content img {
+    width: 25px;
+    margin: 0px auto;
 }
